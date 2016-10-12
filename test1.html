@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> - Microblog</title>
+    <link rel='stylesheet' href='./public/stylesheets/bootstrap.css' />
+    <style type='text/css'>
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+      }
+    </style>
+    <link rel='stylesheet' href='./public/stylesheets/bootstrap-theme.css' />
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid"> 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collpased" data-toggle="collapse" data-target="#bs-example-navbar-collpase-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Microblog</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collpase-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/login">LogIn</a></li>
+            <li><a href="/reg">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="hero-unit">
+        <h1>Welcome to my Microblog</h1>
+        <p>Microblog is a blog using Node.js</p>
+        <p>
+          <a class="btn btn-primary btn-large" href="/login">LogIn</a>
+          <a class="btn btn-default btn-large" href="/reg">Register</a>
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Joan Gu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Joan Gu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Joan Gu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <footer>
+      <p><a href="https://github.com/BIO2CS" target="_blank">Joan Gu</a> 2016</p>
+    </footer>
+
+    <script src="./public/javascripts/jquery-3.1.1.js"></script>
+    <script src="./pulbic/javascripts/bootstrap.js"></script>
+  </body>
+</html>

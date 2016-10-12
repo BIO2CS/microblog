@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> Microblog</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <style type='text/css'>
+     body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+      }
+    </style>
+    <link rel='stylesheet' href='/stylesheets/bootstrap-theme.css' />
+  </head>
+ <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid"> 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collpased" data-toggle="collapse" data-target="#bs-example-navbar-collpase-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Microblog</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collpase-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <% if(!user) { %>
+              <li><a href="/login">LogIn</a></li>
+              <li><a href="/reg">Register</a></li>
+            <% } else { %>
+              <li><a href="/logout">LogOut</a></li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <% if(success) { %>
+      <div class="alert alert-success" role="alert">
+        <%= success %>
+    </div>
+    <% } %>
+
+    <% if(error) { %>
+      <div class="alert alert-warning" role="alert">
+        <%= error %>
+    </div>
+    <% } %>

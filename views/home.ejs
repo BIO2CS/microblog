@@ -1,0 +1,32 @@
+<% include ./partials/head %>
+    <div class="container">
+      <% if(!user) { %>
+      <div class="hero-unit">
+        <h1>Welcome to my Microblog</h1>
+        <p>Microblog is a blog using Node.js</p>
+        <p>
+          <a class="btn btn-primary btn-large" href="/login">LogIn</a>
+          <a class="btn btn-default btn-large" href="/reg">Register</a>
+        </p>
+      </div>
+      <% } %>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Joan Gu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Joan Gu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Joan Gu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+      </div>
+    </div>
+<% include ./partials/foot %>
